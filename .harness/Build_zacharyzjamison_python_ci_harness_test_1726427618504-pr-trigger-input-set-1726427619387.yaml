@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_zacharyzjamison_python_ci_harness_test_1726427618504-pr-trigger-input-set
+  identifier: Build_zacharyzjamison_python_ci_harness_test_1726427618504prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_zacharyzjamison_python_ci_harness_test_1726427618504
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
