@@ -14,12 +14,20 @@ pipeline:
             steps:
               - step:
                   type: Run
-                  name: Run Python Test
+                  name: TestAddFunction
                   identifier: Run_Python_Test
                   spec:
                     shell: Sh
                     command: python test.py -v
-                  description: Will run the python Test
+                  description: Run addition Test
+              - step:
+                  type: Run
+                  name: TestSubtractFunction
+                  identifier: TestSubtractFunction
+                  spec:
+                    shell: Sh
+                    command: python test_2.py -v
+                  description: Run subtract test
           platform:
             os: Linux
             arch: Amd64
